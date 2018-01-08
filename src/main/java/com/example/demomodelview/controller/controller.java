@@ -28,4 +28,8 @@ public class controller {
         ModelAndView m = new ModelAndView("index","model",model);
         return m;
     }
+    @RequestMapping("/one")
+    public String redirectMethod(){
+        return "redirect:/new";
+    }
 }
